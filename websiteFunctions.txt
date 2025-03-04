@@ -1,27 +1,116 @@
+Funkcionalumas:
+Testavimo scenarijai apima tris pagrindinius testus: pirmasis tikrina vartotojo prisijungimo funkcionalumą internetinėje parduotuvėje „saucedemo“, antrasis – prekių pridėjimo į krepšelį ir pašalinimo iš jo procesą, o trečias – pirkimo ir apmokėjimo funkcionalumą. Pirmame scenarijuje tikslas yra užtikrinti, kad vartotojas galėtų prisijungti su įvairiais naudotojo vardais ir slaptažodžiais bei pasiekti pagrindinį puslapį. Antrajame tikrinama, ar prekių įdėjimas į krepšelį, jų pašalinimas ir krepšelio atnaujinimas veikia teisingai, taip pat ar vartotojas gali grįžti į pirkinių sąrašą. Trečiasis scenarijus patikrina, ar pirkimo ir apmokėjimo procesas atliekamas teisingai, įskaitant duomenų įvedimą, „cancel“ mygtuko veikimą, prekių kiekio tikrinimą ir patvirtinimo pranešimo gavimą po apmokėjimo.
+
+Testavimo scenarijai:
+
 2. Pasirinkti realią svetainę ir atlikti pilną svetainės testavimą su Cypress.
-2.1. Pasirinkti svetainę iš pateikto svetainių sąrašo.
-2.2. Susikurti GitHub repositoriją.
+
 2.3. Tiriamuoju testavimu surasti VISĄ svetainės funkcionalumą, visas svetainės funkcijas
 aprašyti faile websiteFunctions.txt.
-2.4. Kiekvienam svetainės funkcionalumui sudaryti testavimo scenarijus. Juos surašyti į failą
-testCases.txt. Pavyzdys:
-Login page:
-2.1: Page load:
- 2.1.1. Check 'Login' title, description
- 2.1.2. Check the page has 'username' and 'password' textboxes.
-2.2. Login functionality:
- 2.2.1 Successfull scenario
- 2.2.2 Unsuccesfull scenario
-2.5. Pagal aprašytus testavimo scenarijus suprogramuoti E2E testus. Kiekvienas
-funkcionalumas turi turėti savo *.cy.js failą, pasikartojantiems veiksmams naudoti
-Cypress Commands.
-2.6. Susikurti JIRA paskyrą https://www.atlassian.com/software/jira ir atlikti tolimesnius
-veiksmus:
-2.6.1. Susikurti SCRUM projektą.
-2.6.2. Visus testavimo scenarijus paversti Backlog items.
-2.6.3. Visus Backlog items perkelti į Sprint 1.
-2.6.4. Pradėti Sprint 1.
-2.7. JIRA Board kiekvieną naujai atrastą funkcionalumą, testavimo scenarijų, bendrai atliktus
-bendrus darbus fiksuoti kaip Backlog item.
-2.8. GitHube sukurti CI Pipeline, kuris git push ir pull metu paleidžia Cypress testus
+
+1. Testavimo scenarijaus pavadinimas:
+Vartotojo prisijungimas prie internetinės parduotuvės "saucedemo".
+Tikslas: 
+Patikrinti, ar vartotojas gali sėkmingai prisijungti prie sistemos.Testavimo sąlygos:
+Naudotojas pasiekia prisijungimo puslapį;
+Naudotojas turi pateiktus prisijungimo vardus ir vieną slaptažodį.
+
+Įvesties duomenys:
+Prisijungimo vardai: 
+standard_user
+locked_out_user
+problem_user
+performance_glitch_user
+error_user
+visual_user
+Slaptažodis:
+secret_sauce
+
+Veiksmai:
+Atidaryti internetinį puslapį;
+Įvesti vieną iš pateiktų naudotojo vardų ir slaptažodį.
+Spausti mygtuką 'login'.
+
+Tikėtinas rezultatas:
+Vartotojas sėkmingai prisijungia prie svetainės;
+Vartotojas patenka į pagrindinį puslapį;
+
+Tikrinami aspektai:
+Ar vartotojas sėkmingai prisijungia?
+Ar vartotojas pasiekia pagrindinį puslapį?
+
+Rezultatai:
+Jei sistema atliko visus veiksmus teisingai tuomet testas yra laikomas sėkmingu;
+Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos su atitinkamais taisymo pasiūlymais.
+
+2. Testavimo scenarijaus pavadinimas:
+Prekių  įdėjimas į krepšelį ir pašalinimas iš jo.
+
+Testavimo sąlygos:
+Vartotojas yra prisijungęs.
+
+Veiksmai:
+Pridėti skirtingas prekes į krepšelį (po 30 vnt.);
+Patikrinti, ar visos prekės atsirado krepšelyje;
+Pašalinti prekes iš krepšelio;
+Spausti Continue Shopping;
+Pridėti vieną prekę į krepšelį;
+Pakartoti veiksmus su skirtingomis paskyromis.
+
+Tikėtinas rezultatas:
+Visos prekės atsiranda krepšelyje;
+Vartotojas gali pašalinti prekes iš krepšelio;
+Po pašalinimo krepšelis tampa tuščias;
+Vartotojas grįžta į pirkinių sąrašo puslapį;
+
+Tikrinami aspektai:
+Ar visos prekės prisidėjo į krepšelį?
+Ar visos prekės panaikintos iš krepšelio?
+Ar po pašalinimo krepšelis tuščias?
+
+Rezultatai:
+Jei sistema atliko visus veiksmus teisingai tuomet testas yra laikomas sėkmingu;
+Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos su atitinkamais taisymo pasiūlymais.
+
+3. Testavimo scenarijaus pavadinimas:
+
+Pirkimo ir mokėjimo funkcionalumas internetinėje parduotuvėje "Saucedemo".
+
+Testavimo tikslas:
+Patikrinti ar teisingai vykdomas apmokėjimas.
+
+Testavimo sąlygos:
+Prekių krepšelis užpildytas.
+
+Įvesties duomenys:
+Vardas: Zebras
+Pavardė: Zebrauskas
+Zip/Postal code: 987456
+
+Veiksmai:
+Eiti į pirkinių krepšelį;
+Spausti Checkout;
+Įvesti gavėjo duomenis (vardas, pavardė, pašto kodas);
+Spausti Continue;
+Tikrinti, ar „Cancel“ mygtukas sugrąžina į krepšelį;
+Spausti Finish;
+Tikrinti, ar pirkimas sėkmingai įvykdytas;
+Tikrinti, ar po apmokėjimo krepšelis liko tuščias.
+
+Tikėtinas rezultatas:
+Įvykdytas pirkimas;
+Pateiktas patvirtinimo pranešimas apie sėkmingą pirkimą;
+Po apmokėjimo krepšelis yra tuščias.
+
+Tikrinami aspektai:
+Ar galima įvesti duomenis?
+Ar veikia "cancel" mygtukas?
+Ar galutiniame apmokėjime yra tiek prekių kiek jų buvo įdėta į krepšelį?
+Ar pirkimo patvirtinimo puslapis rodomas?
+Ar nuskaičiavo tikslią pinigų sumą?
+Ar po sėkmingo apmokėjimo gaunama sėkmingo apsipirkimo žinutė?
+
+Rezultatai:
+Jei sistema atliko visus veiksmus teisingai tuomet testas yra laikomas sėkmingu;
+Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos su atitinkamais taisymo pasiūlymais.
 
