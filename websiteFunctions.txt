@@ -24,3 +24,4 @@ veiksmus:
 2.7. JIRA Board kiekvieną naujai atrastą funkcionalumą, testavimo scenarijų, bendrai atliktus
 bendrus darbus fiksuoti kaip Backlog item.
 2.8. GitHube sukurti CI Pipeline, kuris git push ir pull metu paleidžia Cypress testus
+
