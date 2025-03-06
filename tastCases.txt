@@ -1,0 +1,156 @@
+3. Testavimo scenarijaus pavadinimas:
+
+Pirkimo ir mokėjimo funkcionalumas internetinėje parduotuvėje "Saucedemo".
+
+Testavimo tikslas:
+Patikrinti ar teisingai vykdomas apmokėjimas.
+
+Testavimo sąlygos:
+Prekių krepšelis užpildytas.
+
+Įvesties duomenys:
+Vardas: Zebras
+Pavardė: Zebrauskas
+Zip/Postal code: 987456
+
+Veiksmai:
+Eiti į pirkinių krepšelį;
+Spausti Checkout;
+Įvesti gavėjo duomenis (vardas, pavardė, pašto kodas);
+Spausti Continue;
+Tikrinti, ar „Cancel“ mygtukas sugrąžina į krepšelį;
+Spausti Finish;
+Tikrinti, ar pirkimas sėkmingai įvykdytas;
+Tikrinti, ar po apmokėjimo krepšelis liko tuščias.
+
+Tikėtinas rezultatas:
+Įvykdytas pirkimas;
+Pateiktas patvirtinimo pranešimas apie sėkmingą pirkimą;
+Po apmokėjimo krepšelis yra tuščias.
+
+Tikrinami aspektai:
+Ar galima įvesti duomenis?
+Ar veikia "cancel" mygtukas?
+Ar galutiniame apmokėjime yra tiek prekių kiek jų buvo įdėta į krepšelį?
+Ar pirkimo patvirtinimo puslapis rodomas?
+Ar nuskaičiavo tikslią pinigų sumą?
+Ar po sėkmingo apmokėjimo gaunama sėkmingo apsipirkimo žinutė?
+
+Rezultatai:
+Jei sistema atliko visus veiksmus teisingai tuomet testas yra laikomas sėkmingu;
+Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos su atitinkamais taisymo pasiūlymais.
+
+______________________________________________________________________________________________________________________________________________________
+
+Test scenarios:
+
+2. Select a real site and perform full site testing with Cypress.
+
+2.3. Exploratory testing to find the FULL functionality of the site, all the functions of the site
+described in the websiteFunctions.txt file.
+
+1. Test script name:
+User login to the "saucedemo" online store.
+Purpose: 
+Check whether the user can successfully log in to the system. Test conditions:
+The user accesses the login page;
+The user has provided login names and one password.
+
+Input data:
+Login Names: 
+standard_user
+locked_out_user
+problem_user
+performance_glitch_user
+error_user
+visual_user
+Password:
+secret_sauce
+
+Actions:
+Open a website;
+Enter one of the provided usernames and passwords.
+Press the 'login' button.
+
+Expected result:
+The user successfully logs into the website;
+The user goes to the main page;
+
+Aspects to be checked:
+Is the user successfully logged in?
+Does the user reach the home page?
+
+Results:
+If the system performed all actions correctly, then the test is considered successful;
+If errors have been detected, error reports must be provided with appropriate correction suggestions.
+2. Test script name:
+Adding and removing items to the cart.
+
+Test conditions:
+The user is logged in.
+
+Actions:
+Add different items to the cart (30 items each);
+Check whether all products have appeared in the basket;
+Remove items from the cart;
+Press Continue Shopping;
+Add one product to the cart;
+Repeat the steps with different accounts.
+
+Expected result:
+All items appear in the cart;
+The user can remove items from the cart;
+After removal, the basket becomes empty;
+The user returns to the shopping list page;
+
+Aspects to be checked:
+Are all items added to cart?
+Are all items removed from the cart?
+Is the cart empty after removal?
+
+Results:
+If the system performed all actions correctly, then the test is considered successful;
+If errors have been detected, error reports must be provided with appropriate correction suggestions.
+
+
+3. Test script name:
+
+Purchase and payment functionality in the "Saucedemo" online store.
+
+Purpose of testing:
+Check whether the payment is being made correctly.
+
+Test conditions:
+The shopping cart is filled.
+
+Input data:
+Name: Zebra
+Surname: Zebrauskas
+Zip/Postal code: 987456
+
+Actions:
+Go to shopping cart;
+Press Checkout;
+Enter the recipient's data (name, surname, postal code);
+Press Continue;
+Check if the "Cancel" button returns to the cart;
+Press Finish;
+Check whether the purchase was successfully completed;
+Check if the cart is empty after payment.
+
+Expected result:
+Completed purchase;
+A confirmation message about a successful purchase has been provided;
+After checkout, the cart is empty.
+
+Aspects to be checked:
+Can data be entered?
+Does the cancel button work?
+Does the final payment include as many products as were placed in the cart?
+Is the purchase confirmation page showing?
+Did you calculate the exact amount of money?
+Do I receive a shopping success message after successful payment?
+
+Results:
+If the system performed all actions correctly, then the test is considered successful;
+If errors have been detected, error reports must be provided with appropriate correction suggestions.
