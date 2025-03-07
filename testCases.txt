@@ -1,9 +1,12 @@
 Testavimo scenarijai:
 
 2. Pasirinkti realią svetainę ir atlikti pilną svetainės testavimą su Cypress.
-
 2.3. Tiriamuoju testavimu surasti VISĄ svetainės funkcionalumą, visas svetainės funkcijas
 aprašyti faile websiteFunctions.txt.
+
+
+
+
 
 1. Testavimo scenarijaus pavadinimas:
 Vartotojo prisijungimas prie internetinės parduotuvės "saucedemo".
@@ -38,7 +41,7 @@ Ar vartotojas pasiekia pagrindinį puslapį?
 
 Rezultatai:
 Jei sistema atliko visus veiksmus teisingai tuomet testas yra laikomas sėkmingu;
-Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos su atitinkamais taisymo pasiūlymais.
+Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos su atitinkamais taisymo pasiūlymais (bugs.txt).
 
 2. Testavimo scenarijaus pavadinimas:
 Prekių  įdėjimas į krepšelį ir pašalinimas iš jo.
@@ -67,7 +70,7 @@ Ar po pašalinimo krepšelis tuščias?
 
 Rezultatai:
 Jei sistema atliko visus veiksmus teisingai tuomet testas yra laikomas sėkmingu;
-Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos su atitinkamais taisymo pasiūlymais.
+Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos su atitinkamais taisymo pasiūlymais  (bugs.txt).
 
 3. Testavimo scenarijaus pavadinimas:
 
@@ -109,8 +112,69 @@ Ar po sėkmingo apmokėjimo gaunama sėkmingo apsipirkimo žinutė?
 
 Rezultatai:
 Jei sistema atliko visus veiksmus teisingai tuomet testas yra laikomas sėkmingu;
-Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos su atitinkamais taisymo pasiūlymais.
+Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos su atitinkamais taisymo pasiūlymais  (bugs.txt).
 
+
+4. Testavimo scenarijaus pavadinimas:
+Filtravimo ir rūšiavimo funkcionalumas internetinėje parduotuvėje "Saucedemo".
+
+Testavimo tikslas:
+Patikrinti, ar produktų sąrašo filtravimo ir rūšiavimo funkcionalumas veikia teisingai.
+
+Testavimo sąlygos:
+Vartotojas yra prisijungęs prie sistemos ir mato prekių sąrašą.
+
+Veiksmai:
+
+Atidaryti produktų sąrašą;
+Pasirinkti rūšiavimo kriterijų (pvz., nuo pigiausios iki brangiausios);
+Patikrinti, ar produktai išrikiuojami pagal pasirinktą kriterijų;
+Pasirinkti kitą rūšiavimo kriterijų (pvz., pagal pavadinimą A-Z);
+Patikrinti, ar produktai išrikiuojami pagal naują kriterijų;
+Pakartoti veiksmus su visais galimais rūšiavimo variantais.
+
+Tikėtinas rezultatas:
+
+Produktai išrikiuojami teisingai pagal pasirinktą filtravimo kriterijų;
+Vartotojas gali bet kada keisti filtravimo nustatymus ir jie pritaikomi iškart.
+
+Tikrinami aspektai:
+
+Ar rūšiavimas veikia pagal visus numatytus kriterijus?
+Ar produktų sąrašas atnaujinamas be puslapio perkrovimo?
+
+Rezultatai:
+Jei sistema atliko visus veiksmus teisingai, testas laikomas sėkmingu. Jei buvo aptiktos klaidos, pateikiama klaidų ataskaita su taisymo pasiūlymais  (bugs.txt).
+
+5. Testavimo scenarijaus pavadinimas:
+Atsijungimo (logout) funkcionalumas.
+
+Testavimo tikslas:
+Patikrinti, ar vartotojas gali sėkmingai atsijungti nuo sistemos.
+
+Testavimo sąlygos:
+Vartotojas yra prisijungęs prie "Saucedemo" paskyros.
+
+Veiksmai:
+
+Atidaryti meniu paspaudžiant ant „burger“ ikonėlės;
+Pasirinkti „Logout“;
+Patikrinti, ar vartotojas buvo išregistruotas ir grąžintas į prisijungimo puslapį;
+Bandymas grįžti į pagrindinį puslapį naudojant naršyklės „Back“ mygtuką;
+Pakartoti testą su skirtingomis paskyromis.
+
+Tikėtinas rezultatas:
+
+Vartotojas sėkmingai atsijungia ir grąžinamas į prisijungimo puslapį;
+Po atsijungimo vartotojas negali pasiekti apsipirkimo puslapio.
+
+Tikrinami aspektai:
+
+Ar vartotojas grįžta į prisijungimo puslapį po atsijungimo?
+Ar galima grįžti į pagrindinį puslapį naudojant naršyklės mygtukus?
+
+Rezultatai:
+Jei sistema atliko visus veiksmus teisingai, testas laikomas sėkmingu. Jei buvo aptiktos klaidos, pateikiama klaidų ataskaita su taisymo pasiūlymais  (bugs.txt).
 
 
 ______________________________________________________________________________________________________________________________________________________

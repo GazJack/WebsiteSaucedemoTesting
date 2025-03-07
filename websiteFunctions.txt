@@ -2,6 +2,36 @@ Funkcionalumas:
 
 Testavimo scenarijai apima tris pagrindinius testus: pirmasis tikrina vartotojo prisijungimo funkcionalumą internetinėje parduotuvėje „saucedemo“, antrasis – prekių pridėjimo į krepšelį ir pašalinimo iš jo procesą, o trečias – pirkimo ir apmokėjimo funkcionalumą. Pirmame scenarijuje tikslas yra užtikrinti, kad vartotojas galėtų prisijungti su įvairiais naudotojo vardais ir slaptažodžiais bei pasiekti pagrindinį puslapį. Antrajame tikrinama, ar prekių įdėjimas į krepšelį, jų pašalinimas ir krepšelio atnaujinimas veikia teisingai, taip pat ar vartotojas gali grįžti į pirkinių sąrašą. Trečiasis scenarijus patikrina, ar pirkimo ir apmokėjimo procesas atliekamas teisingai, įskaitant duomenų įvedimą, „cancel“ mygtuko veikimą, prekių kiekio tikrinimą ir patvirtinimo pranešimo gavimą po apmokėjimo.
 
+1. Vartotojo valdymas
+Prisijungimas su naudotojo vardu ir slaptažodžiu.
+Skirtingų vartotojų tipų palaikymas (pvz., standartinis, užblokuotas, lėtas, problematiškas).
+Neteisingų prisijungimo duomenų aptikimas ir klaidos pranešimų rodymas.
+Atsijungimo galimybė.
+2. Produktų katalogas
+Produktų sąrašas su pavadinimais, kainomis ir nuotraukomis.
+Prekių rūšiavimas pagal kainą, pavadinimą (A–Z arba Z–A).
+Galimybė peržiūrėti išsamią prekės informaciją.
+3. Pirkinių krepšelis
+Prekių įdėjimas į krepšelį.
+Prekių pašalinimas iš krepšelio.
+Krepšelio atnaujinimas ir teisingas prekių kiekio rodymas.
+Greita prieiga prie krepšelio iš pagrindinio puslapio.
+4. Užsakymo procesas
+Perėjimas į atsiskaitymo puslapį („Checkout“).
+Vartotojo informacijos (vardas, pavardė, pašto kodas) įvedimas.
+Užsakymo atšaukimo galimybė („Cancel“ mygtukas).
+Užsakymo patvirtinimas ir sėkmingo užbaigimo pranešimas.
+5. Svetainės navigacija
+Puslapių perjungimas (pagrindinis puslapis, prekių detalės, krepšelis, atsiskaitymo puslapis).
+Meniu mygtukas su navigacijos parinktimis (prisijungimo atsijungimo, pirkinių krepšelis, apie svetainę).
+6. UI elementai ir dizainas
+Aiškiai matomi mygtukai ir nuorodos.
+Veikiantis atsako dizainas skirtingiems įrenginiams.
+Produkto nuotraukų ir aprašymų teisingas atvaizdavimas.
+
+
+
+
 
 
 _____________________________________________________________________________________________________________________________________________________
