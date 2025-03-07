@@ -175,3 +175,179 @@ Jei buvo aptiktos klaidos, pateikiama klaidų ataskaita (bugs.txt).
 
 ______________________________________________________________________________________________________________________________________________________
 
+Test Scenarios:
+
+1. Test Scenario Name:
+User Login to the Online Store "saucedemo".
+
+Purpose: 
+To check whether the user can successfully log in to the system.
+
+Test Conditions:
+The user reaches the login page;
+The user has the provided login names and one password.
+
+Input Data:
+Login Names: 
+standard_user
+locked_out_user
+problem_user
+performance_glitch_user
+error_user
+visual_user
+
+Password:
+secret_sauce
+
+Actions:
+Open the web page;
+Enter one of the provided usernames and passwords.
+Press the 'login' button.
+
+Expected Result:
+The user successfully logs in to the website;
+The user reaches the home page.
+
+Aspects to be tested:
+Does the user successfully log in?
+Does the user reach the home page?
+
+Results:
+If the system performed all the actions correctly then the test is considered successful;
+If errors were detected a bug report (bugs.txt) must be submitted.
+
+2. Test scenario name:
+Adding and removing items from the cart.
+
+Testing conditions:
+User is logged in.
+
+Actions:
+Add different items to the cart;
+Check if all items have appeared in the cart;
+Remove items from the cart;
+Click "Continue Shopping";
+Repeat the actions with different accounts.
+
+Expected result:
+All items appear in the cart;
+The user can remove items from the cart;
+After removal, the cart becomes empty;
+The user returns to the shopping list page;
+
+Aspects to be checked:
+Have all items been added to the cart?
+Have all items been removed from the cart?
+
+Results:
+If the system performed all actions correctly, then the test is considered successful;
+If errors were detected, an error report (bugs.txt) must be submitted.
+
+3. Test scenario name:
+Filtering and sorting functionality in the online store "Saucedemo".
+
+Testing goal:
+To check whether the filtering and sorting functionality of the product list works correctly.
+
+Testing conditions:
+The user is logged in to the system and sees the list of products.
+
+Actions:
+
+Open the product list;
+
+Select a sorting criterion (e.g. from the cheapest to the most expensive);
+
+Check whether the products are sorted according to the selected criterion;
+
+Select another sorting criterion (e.g. by name A-Z);
+Check whether the products are sorted according to the new criterion;
+Repeat the steps with all possible sorting options.
+
+Expected result:
+
+The products are sorted correctly according to the selected filtering criterion;
+
+The user can change the filtering settings at any time and they are applied immediately.
+
+Aspects to be checked:
+
+Does sorting work according to all expected criteria?
+
+Does the product list update without reloading the page?
+
+Results:
+If the system performed all actions correctly, the test is considered successful. 
+If errors were detected, a bug report (bugs.txt) is provided.
+
+4. Test scenario name:
+Purchase and payment functionality in the online store "Saucedemo".
+
+Testing purpose:
+To check whether the payment is made correctly.
+
+Testing conditions:
+The shopping cart is full.
+
+Input data:
+First name: Zebras
+Last name: Zebrauskas
+Zip/Postal code: 987456
+
+Actions:
+Go to the shopping cart;
+Click Checkout;
+Enter the recipient's data (first name, last name, postal code);
+Click "Continue";
+Check whether the "Cancel" button returns to the cart;
+Click Finish;
+Check whether the purchase was successfully completed;
+Check whether the cart remained empty after payment.
+
+Expected result:
+The purchase was completed;
+A confirmation message about a successful purchase was provided;
+After payment, the cart is empty.
+
+Aspects to be checked:
+Is it possible to enter data?
+Is the "Cancel" button working?
+Does the final payment contain as many items as were added to the cart?
+Is the purchase confirmation page displayed?
+Is the exact amount of money charged?
+Is a successful purchase message received after successful payment?
+
+Results:
+If the system performed all actions correctly, then the test is considered successful;
+If errors were detected, an error report (bugs.txt) must be submitted.
+
+5. Test scenario name:
+Logout functionality.
+
+Testing objective:
+To check if the user can successfully log out of the system.
+
+Testing conditions:
+The user is logged in to the "Saucedemo" account.
+
+Actions:
+
+Open the menu by clicking on the "burger" icon;
+Select "Logout";
+Check if the user has been logged out and returned to the login page;
+Attempt to return to the home page using the browser's "Back" button;
+Repeat the test with different accounts.
+
+Expected result:
+
+The user successfully logs out and is returned to the login page;
+After logging out, the user cannot access the shopping page.
+
+Aspects to be tested:
+
+Does the user return to the login page after logging out?
+Is it possible to return to the home page using the browser buttons?
+
+Results:
+If the system performed all the actions correctly, the test is considered successful. 
+If errors were detected, a bug report (bugs.txt) is provided.

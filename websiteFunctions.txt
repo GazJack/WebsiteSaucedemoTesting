@@ -26,11 +26,31 @@ Užsakymo patvirtinimas ir sėkmingo užbaigimo pranešimas.
 Vartotojas gali atsijungti paspausdamas „Logout“ mygtuką.
 Po atsijungimo vartotojas perkeliamas į prisijungimo puslapį.
 
+__________________________________________________________________________________________________________________________________________________
 
+Functionality:
 
+1. User management
+Login with username and password.
+Access to the home page after logging in.
 
+2. Shopping cart
+Adding items to the cart.
+Updating the cart and correct display of the quantity of items.
+Quick access to the cart from the home page.
+Remove items from the cart.
 
+3. Product catalog
+List of products with names, prices and photos.
+Sorting items by price, name (A–Z or Z–A).
+Ability to view detailed product information.
 
+4. Order process
+Transition to the checkout page ("Checkout").
+Entering user information (name, surname, zip code).
+Ability to cancel the order ("Cancel" button).
+Order confirmation and notification of successful completion.
 
-_____________________________________________________________________________________________________________________________________________________
-
+5. Logout functionality
+The user can log out by clicking the "Logout" button.
+After logging out, the user is redirected to the login page.
