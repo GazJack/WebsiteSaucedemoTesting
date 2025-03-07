@@ -1,17 +1,13 @@
 Testavimo scenarijai:
 
-2. Pasirinkti realią svetainę ir atlikti pilną svetainės testavimą su Cypress.
-2.3. Tiriamuoju testavimu surasti VISĄ svetainės funkcionalumą, visas svetainės funkcijas
-aprašyti faile websiteFunctions.txt.
-
-
-
-
 
 1. Testavimo scenarijaus pavadinimas:
 Vartotojo prisijungimas prie internetinės parduotuvės "saucedemo".
+
 Tikslas: 
-Patikrinti, ar vartotojas gali sėkmingai prisijungti prie sistemos.Testavimo sąlygos:
+Patikrinti, ar vartotojas gali sėkmingai prisijungti prie sistemos.
+
+Testavimo sąlygos:
 Naudotojas pasiekia prisijungimo puslapį;
 Naudotojas turi pateiktus prisijungimo vardus ir vieną slaptažodį.
 
@@ -23,6 +19,7 @@ problem_user
 performance_glitch_user
 error_user
 visual_user
+
 Slaptažodis:
 secret_sauce
 
@@ -33,7 +30,7 @@ Spausti mygtuką 'login'.
 
 Tikėtinas rezultatas:
 Vartotojas sėkmingai prisijungia prie svetainės;
-Vartotojas patenka į pagrindinį puslapį;
+Vartotojas patenka į pagrindinį puslapį.
 
 Tikrinami aspektai:
 Ar vartotojas sėkmingai prisijungia?
@@ -41,7 +38,7 @@ Ar vartotojas pasiekia pagrindinį puslapį?
 
 Rezultatai:
 Jei sistema atliko visus veiksmus teisingai tuomet testas yra laikomas sėkmingu;
-Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos su atitinkamais taisymo pasiūlymais (bugs.txt).
+Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos (bugs.txt).
 
 2. Testavimo scenarijaus pavadinimas:
 Prekių  įdėjimas į krepšelį ir pašalinimas iš jo.
@@ -53,8 +50,7 @@ Veiksmai:
 Pridėti skirtingas prekes į krepšelį (po 30 vnt.);
 Patikrinti, ar visos prekės atsirado krepšelyje;
 Pašalinti prekes iš krepšelio;
-Spausti Continue Shopping;
-Pridėti vieną prekę į krepšelį;
+Spausti "Continue Shopping";
 Pakartoti veiksmus su skirtingomis paskyromis.
 
 Tikėtinas rezultatas:
@@ -66,14 +62,44 @@ Vartotojas grįžta į pirkinių sąrašo puslapį;
 Tikrinami aspektai:
 Ar visos prekės prisidėjo į krepšelį?
 Ar visos prekės panaikintos iš krepšelio?
-Ar po pašalinimo krepšelis tuščias?
 
 Rezultatai:
 Jei sistema atliko visus veiksmus teisingai tuomet testas yra laikomas sėkmingu;
-Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos su atitinkamais taisymo pasiūlymais  (bugs.txt).
+Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos (bugs.txt).
 
 3. Testavimo scenarijaus pavadinimas:
+Filtravimo ir rūšiavimo funkcionalumas internetinėje parduotuvėje "Saucedemo".
 
+Testavimo tikslas:
+Patikrinti, ar produktų sąrašo filtravimo ir rūšiavimo funkcionalumas veikia teisingai.
+
+Testavimo sąlygos:
+Vartotojas yra prisijungęs prie sistemos ir mato prekių sąrašą.
+
+Veiksmai:
+
+Atidaryti produktų sąrašą;
+Pasirinkti rūšiavimo kriterijų (pvz.: nuo pigiausios iki brangiausios);
+Patikrinti, ar produktai išrikiuojami pagal pasirinktą kriterijų;
+Pasirinkti kitą rūšiavimo kriterijų (pvz., pagal pavadinimą A-Z);
+Patikrinti, ar produktai išrikiuojami pagal naują kriterijų;
+Pakartoti veiksmus su visais galimais rūšiavimo variantais.
+
+Tikėtinas rezultatas:
+
+Produktai išrikiuojami teisingai pagal pasirinktą filtravimo kriterijų;
+Vartotojas gali bet kada keisti filtravimo nustatymus ir jie pritaikomi iškart.
+
+Tikrinami aspektai:
+
+Ar rūšiavimas veikia pagal visus numatytus kriterijus?
+Ar produktų sąrašas atnaujinamas be puslapio perkrovimo?
+
+Rezultatai:
+Jei sistema atliko visus veiksmus teisingai, testas laikomas sėkmingu. 
+Jei buvo aptiktos klaidos, pateikiama klaidų ataskaita (bugs.txt).
+
+4. Testavimo scenarijaus pavadinimas:
 Pirkimo ir mokėjimo funkcionalumas internetinėje parduotuvėje "Saucedemo".
 
 Testavimo tikslas:
@@ -91,7 +117,7 @@ Veiksmai:
 Eiti į pirkinių krepšelį;
 Spausti Checkout;
 Įvesti gavėjo duomenis (vardas, pavardė, pašto kodas);
-Spausti Continue;
+Spausti "Continue";
 Tikrinti, ar „Cancel“ mygtukas sugrąžina į krepšelį;
 Spausti Finish;
 Tikrinti, ar pirkimas sėkmingai įvykdytas;
@@ -104,7 +130,7 @@ Po apmokėjimo krepšelis yra tuščias.
 
 Tikrinami aspektai:
 Ar galima įvesti duomenis?
-Ar veikia "cancel" mygtukas?
+Ar veikia "Cancel" mygtukas?
 Ar galutiniame apmokėjime yra tiek prekių kiek jų buvo įdėta į krepšelį?
 Ar pirkimo patvirtinimo puslapis rodomas?
 Ar nuskaičiavo tikslią pinigų sumą?
@@ -112,42 +138,11 @@ Ar po sėkmingo apmokėjimo gaunama sėkmingo apsipirkimo žinutė?
 
 Rezultatai:
 Jei sistema atliko visus veiksmus teisingai tuomet testas yra laikomas sėkmingu;
-Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos su atitinkamais taisymo pasiūlymais  (bugs.txt).
+Jei buvo aptiktos klaidos turi būti pateikiamas klaidų ataskaitos (bugs.txt).
 
-
-4. Testavimo scenarijaus pavadinimas:
-Filtravimo ir rūšiavimo funkcionalumas internetinėje parduotuvėje "Saucedemo".
-
-Testavimo tikslas:
-Patikrinti, ar produktų sąrašo filtravimo ir rūšiavimo funkcionalumas veikia teisingai.
-
-Testavimo sąlygos:
-Vartotojas yra prisijungęs prie sistemos ir mato prekių sąrašą.
-
-Veiksmai:
-
-Atidaryti produktų sąrašą;
-Pasirinkti rūšiavimo kriterijų (pvz., nuo pigiausios iki brangiausios);
-Patikrinti, ar produktai išrikiuojami pagal pasirinktą kriterijų;
-Pasirinkti kitą rūšiavimo kriterijų (pvz., pagal pavadinimą A-Z);
-Patikrinti, ar produktai išrikiuojami pagal naują kriterijų;
-Pakartoti veiksmus su visais galimais rūšiavimo variantais.
-
-Tikėtinas rezultatas:
-
-Produktai išrikiuojami teisingai pagal pasirinktą filtravimo kriterijų;
-Vartotojas gali bet kada keisti filtravimo nustatymus ir jie pritaikomi iškart.
-
-Tikrinami aspektai:
-
-Ar rūšiavimas veikia pagal visus numatytus kriterijus?
-Ar produktų sąrašas atnaujinamas be puslapio perkrovimo?
-
-Rezultatai:
-Jei sistema atliko visus veiksmus teisingai, testas laikomas sėkmingu. Jei buvo aptiktos klaidos, pateikiama klaidų ataskaita su taisymo pasiūlymais  (bugs.txt).
 
 5. Testavimo scenarijaus pavadinimas:
-Atsijungimo (logout) funkcionalumas.
+Atsijungimo funkcionalumas.
 
 Testavimo tikslas:
 Patikrinti, ar vartotojas gali sėkmingai atsijungti nuo sistemos.
@@ -174,120 +169,9 @@ Ar vartotojas grįžta į prisijungimo puslapį po atsijungimo?
 Ar galima grįžti į pagrindinį puslapį naudojant naršyklės mygtukus?
 
 Rezultatai:
-Jei sistema atliko visus veiksmus teisingai, testas laikomas sėkmingu. Jei buvo aptiktos klaidos, pateikiama klaidų ataskaita su taisymo pasiūlymais  (bugs.txt).
+Jei sistema atliko visus veiksmus teisingai, testas laikomas sėkmingu. 
+Jei buvo aptiktos klaidos, pateikiama klaidų ataskaita (bugs.txt).
 
 
 ______________________________________________________________________________________________________________________________________________________
 
-Test scenarios:
-
-2. Select a real site and perform full site testing with Cypress.
-
-2.3. Exploratory testing to find the FULL functionality of the site, all the functions of the site
-described in the websiteFunctions.txt file.
-
-1. Test script name:
-User login to the "saucedemo" online store.
-Purpose: 
-Check whether the user can successfully log in to the system. Test conditions:
-The user accesses the login page;
-The user has provided login names and one password.
-
-Input data:
-Login Names: 
-standard_user
-locked_out_user
-problem_user
-performance_glitch_user
-error_user
-visual_user
-Password:
-secret_sauce
-
-Actions:
-Open a website;
-Enter one of the provided usernames and passwords.
-Press the 'login' button.
-
-Expected result:
-The user successfully logs into the website;
-The user goes to the main page;
-
-Aspects to be checked:
-Is the user successfully logged in?
-Does the user reach the home page?
-
-Results:
-If the system performed all actions correctly, then the test is considered successful;
-If errors have been detected, error reports must be provided with appropriate correction suggestions.
-2. Test script name:
-Adding and removing items to the cart.
-
-Test conditions:
-The user is logged in.
-
-Actions:
-Add different items to the cart (30 items each);
-Check whether all products have appeared in the basket;
-Remove items from the cart;
-Press Continue Shopping;
-Add one product to the cart;
-Repeat the steps with different accounts.
-
-Expected result:
-All items appear in the cart;
-The user can remove items from the cart;
-After removal, the basket becomes empty;
-The user returns to the shopping list page;
-
-Aspects to be checked:
-Are all items added to cart?
-Are all items removed from the cart?
-Is the cart empty after removal?
-
-Results:
-If the system performed all actions correctly, then the test is considered successful;
-If errors have been detected, error reports must be provided with appropriate correction suggestions.
-
-
-3. Test script name:
-
-Purchase and payment functionality in the "Saucedemo" online store.
-
-Purpose of testing:
-Check whether the payment is being made correctly.
-
-Test conditions:
-The shopping cart is filled.
-
-Input data:
-Name: Zebra
-Surname: Zebrauskas
-Zip/Postal code: 987456
-
-Actions:
-Go to shopping cart;
-Press Checkout;
-Enter the recipient's data (name, surname, postal code);
-Press Continue;
-Check if the "Cancel" button returns to the cart;
-Press Finish;
-Check whether the purchase was successfully completed;
-Check if the cart is empty after payment.
-
-Expected result:
-Completed purchase;
-A confirmation message about a successful purchase has been provided;
-After checkout, the cart is empty.
-
-Aspects to be checked:
-Can data be entered?
-Does the cancel button work?
-Does the final payment include as many products as were placed in the cart?
-Is the purchase confirmation page showing?
-Did you calculate the exact amount of money?
-Do I receive a shopping success message after successful payment?
-
-Results:
-If the system performed all actions correctly, then the test is considered successful;
-If errors have been detected, error reports must be provided with appropriate correction suggestions.
