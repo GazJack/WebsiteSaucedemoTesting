@@ -17,6 +17,7 @@ Prekių rūšiavimas pagal kainą, pavadinimą (A–Z arba Z–A).
 Galimybė peržiūrėti išsamią prekės informaciją.
 
 4. Užsakymo procesas
+Prekės pridėjimas į krepšelį.
 Perėjimas į atsiskaitymo puslapį („Checkout“).
 Vartotojo informacijos (vardas, pavardė, pašto kodas) įvedimas.
 Užsakymo atšaukimo galimybė („Cancel“ mygtukas).
