@@ -29,6 +29,7 @@ describe("Test Case 1", () => {
     cy.get("[data-test='error']").should("contain", "Username and password do not match");
   });
 
+  // žalias
   it("Empty username and password", () => {
     cy.homePage();
     cy.get("[data-test='login-button']").click();
