@@ -1,10 +1,12 @@
 problem_user į krepšelį įdeda 3 prekes vietoj 6
 problem_user nepanaikina prekių iš krepšelio
 problem_user nefiltruoja z-a, low-high, high-low
+problem_user darant užsakymą neišsisaugo pavardė
 
 error_user į krepšelį įdeda 3 prekes vietoj 6
 error_user nepanaikina prekių iš krepšelio
 error_user nefiltruoja z-a, low-high, high-low
+error_user darant užsakymą neišsisaugo pavardė
 
 visual_user low-high, high-low filtruoja, bet neteisingai
 
