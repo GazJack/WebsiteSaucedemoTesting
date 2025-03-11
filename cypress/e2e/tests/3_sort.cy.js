@@ -6,7 +6,7 @@ const users = [
   'visual_user'
 ];
 
-describe('Test Case 2 - Filtering and Sorting', () => {
+describe('Test Case 3', () => {
   users.forEach(user => {
     describe(`Testing with user: ${user}`, () => {
       beforeEach(() => {
