@@ -1,34 +1,3 @@
-Funkcionalumas:
-
-
-1. Vartotojo valdymas
-Prisijungimas su naudotojo vardu ir slaptažodžiu.
-Pagrindinio puslapio pasiekimas prisijungus.
-
-2. Pirkinių krepšelis
-Prekių įdėjimas į krepšelį.
-Krepšelio atnaujinimas ir teisingas prekių kiekio rodymas.
-Greita prieiga prie krepšelio iš pagrindinio puslapio.
-Prekių pašalinimas iš krepšelio.
-
-3. Produktų katalogas
-Produktų sąrašas su pavadinimais, kainomis ir nuotraukomis.
-Prekių rūšiavimas pagal kainą, pavadinimą (A–Z arba Z–A).
-Galimybė peržiūrėti išsamią prekės informaciją.
-
-4. Užsakymo procesas
-Prekės pridėjimas į krepšelį.
-Perėjimas į atsiskaitymo puslapį („Checkout“).
-Vartotojo informacijos (vardas, pavardė, pašto kodas) įvedimas.
-Užsakymo atšaukimo galimybė („Cancel“ mygtukas).
-Užsakymo patvirtinimas ir sėkmingo užbaigimo pranešimas.
-
-5. Atsijungimo (logout) funkcionalumas
-Vartotojas gali atsijungti paspausdamas „Logout“ mygtuką.
-Po atsijungimo vartotojas perkeliamas į prisijungimo puslapį.
-
-__________________________________________________________________________________________________________________________________________________
-
 Functionality:
 
 1. User management
@@ -55,3 +24,4 @@ Order confirmation and notification of successful completion.
 5. Logout functionality
 The user can log out by clicking the "Logout" button.
 After logging out, the user is redirected to the login page.
+
