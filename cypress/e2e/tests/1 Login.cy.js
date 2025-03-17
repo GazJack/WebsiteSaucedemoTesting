@@ -19,14 +19,14 @@ describe("Test Case 1", () => {
     });
   });
 
-  it("Wrong username and correct password", () => {
+  it("Empty username and correct password", () => {
     cy.visit("https://www.saucedemo.com/");
     cy.get('[data-test="password"]').type('secret_sauce');
     cy.get('[data-test="login-button"]').click();
     cy.get('[data-test="title"]').should('be.visible');
   });
 
-  it("Correct username and wrong password", () => {
+  it("Correct username and empty password", () => {
     cy.visit("https://www.saucedemo.com/");
     cy.get('[data-test="username"]').type('standart_user');
     cy.get('[data-test="login-button"]').click();
