@@ -6,7 +6,7 @@ const users = [
     'visual_user'
 ];
 
-describe('Test Case 4', () => {
+describe('Test Case 5', () => {
     users.forEach(user => {
         describe(`Logout with user: ${user}`, () => {
             beforeEach(() => {
