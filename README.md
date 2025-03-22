@@ -1,4 +1,4 @@
-# 🚀 WebsiteSaucedemoTesting 🧪
+# 🚀 Saucedemo Website Cypress Testing 🧪
 
 This project is designed for automated testing of the [Sauce Demo](https://www.saucedemo.com/) website using the [Cypress](https://www.cypress.io/) testing framework.
 
